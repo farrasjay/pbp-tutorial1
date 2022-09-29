@@ -1,0 +1,66 @@
+.nav-item {
+    background-color: #ffffff;
+    border: #ffffff;
+    color: #ffffff;
+    font-size: 18pt;
+    text-decoration: none;
+}
+
+.login {
+    background-color: aquamarine;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.wishlist {
+    background-color: aquamarine;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px 2px;
+    }
+    td {
+        text-align: center;
+        padding: 5px;
+    }
+
+.logo {
+    height : 50px;
+    width : 50px;
+}
+
+.container-fluid {
+    background-color: #000000;
+    overflow : hidden;
+}
+
+.name {
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    font-size: 15pt;
+    text-decoration: none;
+    text-align: right;
+}
+
+.login h1,
+.login h1 a,
+.login h1 a:visited,
+.login h1 a:active {
+    color: #000000;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lobster', cursive;
+}
