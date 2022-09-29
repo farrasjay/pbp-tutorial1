@@ -20,17 +20,12 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{% url 'wishlist:show_wishlist' %}">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'wishlist:logout' %}">Logout</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Menu
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'wishlist:show_wishlist' %}">Wishlist</a></li>
-                <li><a class="dropdown-item" href="{% url 'wishlist:login' %}">Login</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="{% url 'wishlist:logout' %}">Logout</a></li>
               </ul>
           </ul>
         </div>
