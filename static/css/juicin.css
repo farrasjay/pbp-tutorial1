@@ -20,6 +20,28 @@
     padding: 20px 20px 20px 40px;
 }
 
+
+.addwishlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ajax-title, .ajax-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class = "wishlist">
+    <h1>Wishlists</h1>
+    <table class="table table-dark table-hover">
+        <tr>
+        <th>Nama Barang</th>
+        <th>Harga Barang</th>
+        <th>Deskripsi</th>
+        </tr>
+        {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for barang in list_barang %}
+        <tr>
+            <th>{{barang.nama_barang}}</th>
+            <th>{{barang.harga_barang}}</th>
+            <th>{{barang.deskripsi}}</th>
+        </tr>
+    {% endfor %}
+    </table>
+    <h5>Sesi terakhir login: {{ last_login }}</h5>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $.get('/wishlist/json', function (data) {
+      data.map((singleData) =>
+        $('#table-body').append(`<tr>
+    <td>${singleData.fields.nama_barang}</td>
+    <td>${singleData.fields.harga_barang}</td>
+    <td>${singleData.fields.deskripsi}</td>
+  </tr>`)
+      );
+    });
+  });
+</script>
+{% endblock content %}
