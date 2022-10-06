@@ -27,7 +27,7 @@
   $(document).ready(function () {
     $.get('/wishlist/json', function (data) {
       data.map((singleData) =>
-        $('#table-body').append(`<tr>
+        $('#table').append(`<tr>
     <td>${singleData.fields.nama_barang}</td>
     <td>${singleData.fields.harga_barang}</td>
     <td>${singleData.fields.deskripsi}</td>
